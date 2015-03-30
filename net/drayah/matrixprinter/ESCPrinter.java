@@ -42,7 +42,7 @@ DAMAGE.
  *   Class that doesn't change the great work of Giovanni but add Linux Compatibility (maybe also on Mac, not tested). In Linux, use Windows sample, and just add print() call before closing streams
  */
 
-package printer;
+package net.drayah.matrixprinter;
 
 import java.awt.print.PrinterJob;
 import java.io.FileInputStream;
