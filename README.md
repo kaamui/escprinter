@@ -20,8 +20,8 @@ You can also try to compile and run MatrixMain.java to test these features
 		    escp.print("Very simple and easy!");
 		    escp.formFeed(); //eject paper
 
-		    **if (!System.getProperty("os.name").toLowerCase().equalsIgnoreCase("win")) //if you don't need to support cross platform, adapt the code**  
-		        **escp.print();**
+		    if (!System.getProperty("os.name").toLowerCase().equalsIgnoreCase("win")) //if you don't need to support cross platform, adapt the code
+		        escp.print();
 
 		    escp.close(); //close stream
 		}
@@ -29,7 +29,7 @@ You can also try to compile and run MatrixMain.java to test these features
 		{
 		    System.out.println("could not find speicifed printer");
 		}
-	}        
+	}
 		
 		
 	private static void printAnExistingFile(String printerName, String filename) 
@@ -46,7 +46,7 @@ You can also try to compile and run MatrixMain.java to test these features
 	}
 
 	public static void main(String[] args) 
-	{  
+	{
 		// These lines of code are examples of using on a linux or Windows computer
 		// Be careful : The printers you're trying to access must be registered on your computer,
 		// it is not possible to access to a remote printer
@@ -68,4 +68,4 @@ You can also try to compile and run MatrixMain.java to test these features
 		//another way to use the API with an exisiting file (mime-type: octet-stream) containing ESC-P or ESCP-2 sequences
 		printAnExistingFile("Generic-ESC-P-Dot-Matrix", "/home/user/Documents/escp2.txt"); //for Linux (a file with ESC-P or ESC-P2 format)
 		//printAnExistingFile("\\computername\printername", "C:/escp2.txt"); //for Windows (a file with ESC-P or ESC-P2 format)                   
-	}    
+	}
