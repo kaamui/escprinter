@@ -2,7 +2,7 @@ escprinter
 =======
 
 Simple Java class to allow printing to Epson ESC/P and ESC/P2 matrix printers. See below for the different ways to use it. 
-You can also try to compile and run MatrixMain.java to test theses features 
+You can also try to compile and run MatrixMain.java to test these features 
             
 	private static void classicUse(String printerName)
 	{
